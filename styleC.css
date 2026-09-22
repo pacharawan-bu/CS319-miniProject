@@ -16,6 +16,7 @@ body {
   background-color: #d8f6ff;
   margin: 0;
   padding: 0;
+  margin-top: 80px;
 }
 
 .header {
@@ -27,6 +28,13 @@ body {
   background-color: #ffffff;
   padding: 10px;
   gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .page-subtitle {
