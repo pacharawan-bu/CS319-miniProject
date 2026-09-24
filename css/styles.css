@@ -1,0 +1,547 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  padding-top: 80px; /* เว้นที่ให้ navbar ที่ติดบนสุด (เหมือน style.css) */
+}
+
+/* ===== Navbar: เหมือน .header ใน style.css ===== */
+
+/* กฎ * ด้านบนตั้ง font-family เป็น Segoe UI ให้ทุก element โดยตรง
+   ลูกของ navbar จึงสืบทอดฟอนต์จาก .navbar ไม่ได้ ต้องตั้ง Anuphan ให้ตรง ๆ แบบนี้ */
+.navbar,
+.navbar * {
+  font-family: "Anuphan", sans-serif;
+}
+
+/* = .header */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 4px 12px rgba(82, 151, 255, 0.08);
+}
+
+/* = ชื่อ + subtitle ที่วางเรียงกันใน .header */
+.logo_group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* = .page-title */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #070707;
+}
+
+/* = .page-subtitle */
+.sub_logo {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* = .topnav */
+.nav_links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* = .topnav a */
+.nav_links a {
+  color: #070707;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+/* = .topnav a:hover */
+.nav_links a:hover {
+  background-color: #eef8ff;
+  color: #5297ff;
+  transform: translateY(-1px);
+}
+
+/* = .topnav a.job (ลิงก์หน้าปัจจุบัน) ต้องอยู่หลัง :hover เหมือนเดิม */
+.nav_links a.job {
+  background-color: #ffffff;
+  color: rgb(139, 222, 255);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.company_header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.company_logo {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #333;
+  border-radius: 16px;
+}
+
+.company_info h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.company_type {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.btn_group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_gray {
+  background-color: #9e9e9e;
+  color: #fff;
+}
+
+.btn_blue {
+  background-color: #6392ff;
+  color: #fff;
+}
+
+.divider {
+  margin: 25px 0;
+  border: none;
+  border-top: 2px solid #cccccc;
+}
+
+.content_grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+}
+
+/* ชื่อ ตำแหน่งงาน */
+.job_title_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.job_title_row h1 {
+  font-size: 20px;
+}
+
+.btn_apply {
+  background-color: #6392ff;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+/*  list ในตำแหน่งงาน */
+.job_info_list {
+  list-style: none;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* ส่วนของ job detail */
+.job_detail_body {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.job_detail_body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.job_detail_body p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.job_detail_body ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.job_detail_body ul li {
+  position: relative;
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: #444444;
+  padding-left: 22px;
+  margin-bottom: 10px;
+}
+
+.job_detail_body ul li::before {
+  content: "•";
+  color: #6392ff;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  left: 4px;
+  top: -1px;
+}
+
+/* ฝั่งด้านขวา */
+.sidebar {
+  margin-bottom: 15px;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.job_card {
+  border: 1px solid #777;
+  border-radius: 16px;
+  padding: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.job_card_logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.job_card_description {
+  font-size: 10px;
+  color: #6392ff;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.job_card_title a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.job_card_title p {
+  color: #000000;
+}
+
+/* ส่วนแบบฟอร์มสมัครงาน */
+
+.form_section {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 2px solid #cccccc;
+}
+
+.form_title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.form_form {
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form_group label {
+  font-size: 14px;
+  color: #333;
+}
+
+.form_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.field_short {
+  width: 50%;
+}
+
+.form_input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form_input:focus {
+  border-color: #6392ff;
+}
+
+.textarea_input {
+  border-radius: 16px;
+  resize: none;
+}
+
+/* อัปโหลด port */
+.file_input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn_upload {
+  color: #ffffff !important;
+  background-color: #6392ff;
+  padding: 8px 20px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.file_name {
+  font-size: 13px;
+  color: #888;
+}
+
+.sex_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* เลือกระดับสมรรถนะ */
+.radio_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.radio_label {
+  font-size: 16px;
+  color: #333;
+}
+
+.radio_option {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radio_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.radio_item input[type="radio"] {
+  accent-color: #6392ff;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.radio_text {
+  font-size: 14px;
+  color: #888;
+}
+
+/* check box ของ pdpa */
+.checkbox_group {
+  margin-top: 15px;
+}
+
+.checkbox_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+}
+
+.checkbox_item input[type="checkbox"] {
+  accent-color: #6392ff;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.form_submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn_submit {
+  background-color: #6392ff;
+  color: #fff;
+  border: none;
+  padding: 10px 45px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(99, 146, 255, 0.3);
+  transition: opacity 0.2s;
+}
+
+.btn_submit:hover {
+  opacity: 0.9;
+}
+
+/* error */
+.error {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Pop up ข้อความ */
+.popUp {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp_window {
+  background-color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 420px;
+  width: 90%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popUp_title {
+  color: #28a745;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.popUp_text {
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.btn_popUp_close {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 10px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn_popUp_close:hover {
+  background-color: #1d4ed8;
+}
+
+.popUp.show {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
