@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Larb tech - แพลตฟอร์มค้นหางานด่วน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/home.css" />
+    <!-- Js -->
+    <script src="./js/home.js"></script>
+</head>
+<body>
+
+    <!-- =======
+          Header 
+         =======-->
+    <header class="header">
+        <a href="index.html" class="brand-wrapper" style="text-decoration: none;">
+            <h1 class="page-title">LARB TECH</h1>
+            <div class="page-subtitle">
+                หางานด่วนทั่วไทย
+            </div>
+        </a>
+        <nav class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a class="job" href="job.html">Job</a>
+            <a class="regis" href="cert.html">Certificate</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- =======
+              Search 
+             =======-->
+        <section class="hero-section">
+            <!-- Left: Search Card -->
+            <div class="search-card">
+                <form id="heroSearchForm" onsubmit="return false;">
+                    <div class="search-input-group">
+                        <input
+                            type="text"
+                            id="jobTitleInput"
+                            class="search-input"
+                            placeholder="ตำแหน่งงานที่สนใจ"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div class="search-input-group" style="margin-top: 12px;">
+                        <input
+                            type="text"
+                            id="jobLocationInput"
+                            class="search-input"
+                            placeholder="สถานที่ทำงาน"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div class="search-input-group" style="margin-top: 12px;">
+                        <input
+                            type="text"
+                            id="jobTypeInput"
+                            class="search-input"
+                            placeholder="ประเภทงาน"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div style="display: flex; justify-content: center; margin-top: 8px;">
+                        <button type="submit" id="searchSubmitBtn" class="btn-search">ค้นหา</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Search : Right -->
+            <div class="hero-content">
+                <h2 class="hero-title">Larb tech</h2>
+                <p class="hero-subtitle">
+                    แพลตฟอร์มค้นหางานด่วนที่คุณหามากกว่า 1 พันล้านคนไม่เลือกใช้ ไม่พร้อมเป็นเพื่อนทุกก้าวสู่ความสำเร็จในอาชีพคุณ
+                </p>
+
+                <!-- arrow button -->
+                <div class="hero-action-row">
+                    <button type="button" class="hero-arrow-btn" aria-label="ดำเนินการต่อ">
+                        <span>&rarr;</span>
+                    </button>
+                    
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">16,438</span>
+                        <span class="stat-label">ตำแหน่งงานที่เปิด</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">14</span>
+                        <span class="stat-label">บริษัทชั้นนำ</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">ตำแหน่ง</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================
+              Carousel Banner 
+             ================= -->
+        <section class="carousel-section">
+            <div id="topCarousel" class="carousel-container">
+                <!-- Slide 1 -->
+                <div class="carousel-slide slide-item active">
+                    <div class="image-placeholder">
+                        <img src="./image/carousel_banner/courses-02.jpg" alt="carousel banner 1">
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide slide-item">
+                    <div class="image-placeholder">
+                        <img src="./image/carousel_banner/courses-04.jpg" alt="carousel banner 2">
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide slide-item">
+                    <div class="image-placeholder">
+                        <img src="./image/carousel_banner/courses-05.jpg" alt="carousel banner 3">
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-slide slide-item">
+                    <div class="image-placeholder">
+                        <img src="./image/carousel_banner/courses-04.jpg" alt="carousel banner 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Banner Dot -->
+            <div id="topCarouselDots" class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- =================
+                Urgent Jobs 
+             ================= -->
+        <section class="urgent-jobs-section">
+            <h3 class="section-title">หางานด่วน</h3>
+            <div class="job-cards-grid">
+                <!-- Job Card 1 -->
+                <a class="job-card" href="job_desc.html">
+                    <div class="job-card-header">
+                        <div class="job-logo-placeholder">
+                            <img src="./image/company/cloudforge_logo.jpg" alt="โลโก้">
+                        </div>
+                        <div class="job-company-info">
+                            <div class="job-company-name">CloudForge Labs</div>
+                            <div class="job-position-name">AI-Assisted DevOps Engineer</div>
+                        </div>
+                    </div>
+                    <p class="job-card-desc">
+                        CloudForge Labs กำลังมองหา DevOps Engineer ที่มีความเชี่ยวชาญด้านโครงสร้างพื้นฐานระบบ (CI/CD, Cloud, Infrastructure as Code) และกระตือรือร้นในการนำ AI Coding & Automation Tools (เช่น GitHub Copilot, Cursor, ChatGPT, Claude) มาช่วยเร่งความเร็ว เพิ่มความแม่นยำ และลดเวลาการบริหารจัดการระบบโครงสร้างพื้นฐาน
+                    </p>
+                    <div class="job-card-salary">
+                        เงินเดือน : 40,000 - 70,000 บาท/เดือน (ขึ้นอยู่กับทักษะและประสบการณ์)
+                    </div>
+                </a>
+
+                <!-- Job Card 2 -->
+                <a class="job-card" href="">
+                    <div class="job-card-header">
+                        <div class="job-logo-placeholder"></div>
+                        <div class="job-company-info">
+                            <div class="job-company-name">AI-Assisted DBA & Data Analyst</div>
+                            <div class="job-position-name">ตำแหน่งที่เปิด</div>
+                        </div>
+                    </div>
+                    <p class="job-card-desc">
+                        รายละเอียดงาน : รายละเอียดงาน
+                    </p>
+                    <div class="job-card-salary">
+                        เงินเดือน : เงินเดือน - เงินเดือน
+                    </div>
+                </a>
+
+                <!-- Job Card 3 -->
+                <a class="job-card" href="">
+                    <div class="job-card-header">
+                        <div class="job-logo-placeholder"></div>
+                        <div class="job-company-info">
+                            <div class="job-company-name">AI-Assisted Software Tester (QA Engineer)</div>
+                            <div class="job-position-name">ตำแหน่งที่เปิด</div>
+                        </div>
+                    </div>
+                    <p class="job-card-desc">
+                        รายละเอียดงาน : รายละเอียดงาน
+                    </p>
+                    <div class="job-card-salary">
+                        เงินเดือน : เงินเดือน - เงินเดือน
+                    </div>
+                </a>
+
+                <!-- Job Card 4 -->
+                <a class="job-card" href="">
+                    <div class="job-card-header">
+                        <div class="job-logo-placeholder"></div>
+                        <div class="job-company-info">
+                            <div class="job-company-name">ชื่อ บ.</div>
+                            <div class="job-position-name">ตำแหน่งที่เปิด</div>
+                        </div>
+                    </div>
+                    <p class="job-card-desc">
+                        รายละเอียดงาน : รายละเอียดงาน
+                    </p>
+                    <div class="job-card-salary">
+                        เงินเดือน : เงินเดือน - เงินเดือน
+                    </div>
+                </a>
+
+                <!-- Job Card 5 -->
+                <a class="job-card" href="">
+                    <div class="job-card-header">
+                        <div class="job-logo-placeholder"></div>
+                        <div class="job-company-info">
+                            <div class="job-company-name">ชื่อ บ.</div>
+                            <div class="job-position-name">ตำแหน่งที่เปิด</div>
+                        </div>
+                    </div>
+                    <p class="job-card-desc">
+                        รายละเอียดงาน : รายละเอียดงาน
+                    </p>
+                    <div class="job-card-salary">
+                        เงินเดือน : เงินเดือน - เงินเดือน
+                    </div>
+                </a>
+
+                <!-- Job Card 6 -->
+                <a class="job-card" href="">
+                    <div class="job-card-header">
+                        <div class="job-logo-placeholder"></div>
+                        <div class="job-company-info">
+                            <div class="job-company-name">ชื่อ บ.</div>
+                            <div class="job-position-name">ตำแหน่งที่เปิด</div>
+                        </div>
+                    </div>
+                    <p class="job-card-desc">
+                        รายละเอียดงาน : รายละเอียดงาน
+                    </p>
+                    <div class="job-card-salary">
+                        เงินเดือน : เงินเดือน - เงินเดือน
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- =================
+              Sponsor Banner 
+             ================= -->
+        <section class="sponsor-banner-section">
+            <div id="sponsorCarousel" class="sponsor-banner-container">
+                <!-- Slide 1  -->
+                <div class="sponsor-slide slide-item active">
+                    <div class="image-placeholder" style="background: linear-gradient(120deg, #64748b 0%, #475569 100%);">
+                        <img src="./image/sponser/test_sponser_1.jpg" alt="Sponsor Banner">
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="sponsor-slide slide-item">
+                    <div class="image-placeholder" style="background: linear-gradient(120deg, #475569 0%, #334155 100%);">
+                        <img src="./image/sponser/test_sponser_2.jpg" alt="Sponsor Banner">
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="sponsor-slide slide-item">
+                    <div class="image-placeholder" style="background: linear-gradient(120deg, #52637a 0%, #3b4859 100%);">
+                        <img src="./image/sponser/test_sponser_3.jpg" alt="Sponsor Banner">
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="sponsor-slide slide-item">
+                    <div class="image-placeholder" style="background: linear-gradient(120deg, #6b7280 0%, #4b5563 100%);">
+                        <img src="./image/sponser/test_sponser_4.jpg" alt="Sponsor Banner">
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="sponsor-slide slide-item">
+                    <div class="image-placeholder" style="background: linear-gradient(120deg, #6b7280 0%, #4b5563 100%);">
+                        <img src="./image/sponser/test_sponser_5.jpg" alt="Sponsor Banner">
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Sponser Banner Dot -->
+            <div id="sponsorCarouselDots" class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- =================
+            Company Logos
+             ================= -->
+        <section class="companies-section">
+            <h3 class="section-title">บริษัทชั้นนำที่เปิดหางาน</h3>
+            <div class="companies-grid">
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/cloudforge_logo.jpg" alt="Company 1">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 2">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 3">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 4">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 5">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 6">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 7">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 8">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 9">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 10">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 11">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 12">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 13">
+                </div>
+                <div class="company-logo-item">
+                    <div class="company-box"></div>
+                    <img src="./image/company/" alt="Company 14">
+                </div>
+            </div>
+        </section>
+
+        <!-- =================
+                   Member 
+             ================ -->
+        <section class="team-section">
+            <!-- 1 -->
+            <div class="team-card">
+                <div class="image-placeholder">
+                    <img src="./image/member/รูปมึง" alt="">
+                </div>
+                <div class="team-name">ชื่อ</div>
+            </div>
+            <!-- 2 -->
+            <div class="team-card">
+                <div class="image-placeholder">
+                    <img src="./image/member/pakin.jpg" alt="">
+                </div>
+                <div class="team-name">ภาคิน หนุนนาค</div>
+            </div>
+            <!-- 3 -->
+            <div class="team-card">
+                <div class="image-placeholder">
+                    <img src="./image/member/รูปมึง" alt="">
+                </div>
+                <div class="team-name">ชื่อ</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =================
+            Footer
+         ================ -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Left -->
+            <div class="footer-brand">
+                <span class="footer-logo">LARBTECH</span>
+            </div>
+
+            <!-- Right -->
+            <div class="footer-info-cols">
+                <div class="footer-col-text">
+                    ที่อยู่ :<br>9/1 ถ. พหลโยธิน ตำบล คลองหนึ่ง อำเภอคลองหลวง ปทุมธานี 12120
+                </div>
+                <div class="footer-col-text">
+                    ชื่อผู้จัดทำ :<br>นางสาว พชรวรรณ บัวศรีจันทร์<br>1660700699 427A<br>นายภาคิน หนุนนาค<br>1660701461 427A<br>นาย นพเชษฐ์ อ่ำกรด<br>1660707009 427A 
+                </div>
+                <div class="footer-col-text">
+                    ติดต่อเรา :<br>02 407 3888
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

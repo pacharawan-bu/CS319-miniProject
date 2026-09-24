@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <title>Larb Tech</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -18,17 +19,17 @@
       <h1 class="page-title">Larb Tech</h1>
       <h3 class="page-subtitle">หางานด่วนทั่ว E3</h3>
       <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a class="job" href="#jobs">Job</a>
-        <a class="regis" href="#registration">Registration</a>
+        <a class="active" href="index.html">Home</a>
+        <a class="job" href="job.html">Jobs</a>
+        <!-- <a class="regis" href="#registration">Registration</a> -->
         <a class="cert" href="cert.html">Certification</a>
-        <a class="about" href="#about">About Us</a>
+        <!-- <a class="about" href="#about">About Us</a> -->
       </div>
     </div>
     <div class="jobsearch">
       <a class="jobsearch-title">ค้นหางาน</a>
       <a class="jobsearch-subtitle"
-        >จากงานมากกว่า <a class="jobsearch-count">0</a> ตำแหน่ง</a
+        >จากงานมากกว่า <a class="jobsearch-count">16,438</a> ตำแหน่ง</a
       >
     </div>
 
@@ -63,11 +64,11 @@
       <div class="job-recommend-item">
         <img src="https://media.tenor.com/oPv2h0BGV5gAAAAM/working-cat-working.gif" alt="Job position" width="100" height="100" />
         <br />
-        <a>n ชั่วโมงที่แล้ว</a>
-        <p>เจ้าหน้าที่ตำรวจตรวจลาบ</p>
-        <a>บริษัท ลาบอินซิเด้น จำกัดมหาชน</a>
-        <p>บุรีรัมย์</p>
-        <p>5 - 10 บาท</p>
+        <a class="times">1 ชั่วโมงที่แล้ว</a>
+        <p>AI Promt Engineer</p>
+        <a>NexGen Innovations Co., Ltd.</a>
+        <p>กรุงเทพมหานคร</p>
+        <a>40,000 -70,000 บาท</a>
       </div>
       <div class="job-recommend-item">
         <img src="https://media.tenor.com/oPv2h0BGV5gAAAAM/working-cat-working.gif" alt="Job position" width="100" height="100" />
@@ -144,8 +145,13 @@
 
     <div class="job-result">
       <a class="job-result-title">ผลการค้นหางาน</a>
-      <p class="job-result-pos">ผลการค้นหา <a>0</a> ตำแหน่ง  </p>
-      <button>จัดเรียงตาม : </button>
+      <p class="job-result-pos">ผลการค้นหา <a>3</a> ตำแหน่ง  </p>
+      <div class="sort-btn">
+  <button type="button">
+    <i class="fa fa-sort"></i>
+    จัดเรียงตามวันที่
+  </button>
+</div>
       <div class="job-result-list">
         <img src="https://media.tenor.com/oPv2h0BGV5gAAAAM/working-cat-working.gif" alt="Job position" width="100" height="100"/>
         <div class="job-det">
@@ -158,6 +164,7 @@
           <button class="det-btn" onclick="location.href='job-details.html'">View details</button>
         </div>
       </div>
+       
       
 
       <div class="job-result-list">
@@ -185,11 +192,30 @@
           <button class="det-btn">View details</button>
         </div>
       </div>
+      </div>
   </body>
   <div class="footer">
-    <footer >
-    <p>© 2024 Larb Tech. All rights reserved.</p>
-  </footer>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Left -->
+            <div class="footer-brand">
+                <span class="footer-logo">LARBTECH</span>
+            </div>
+
+            <!-- Right -->
+            <div class="footer-info-cols">
+                <div class="footer-col-text">
+                    ที่อยู่ :<br>9/1 ถ. พหลโยธิน ตำบล คลองหนึ่ง อำเภอคลองหลวง ปทุมธานี 12120
+                </div>
+                <div class="footer-col-text">
+                    ชื่อผู้จัดทำ :<br>นางสาว พชรวรรณ บัวศรีจันทร์<br>1660700699 427A<br>นายภาคิน หนุนนาค<br>1660701461 427A<br>นาย นพเชษฐ์ อ่ำกรด<br>1660707009 427A 
+                </div>
+                <div class="footer-col-text">
+                    ติดต่อเรา :<br>02 407 3888
+                </div>
+            </div>
+        </div>
+    </footer>
   </div>
   
 </html>

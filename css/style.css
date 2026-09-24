@@ -10,7 +10,6 @@ body {
   background-color: #d8f6ff;
   margin: 0;
   padding: 0;
-  padding-top: 80px;
 }
 
 .header {
@@ -71,6 +70,7 @@ body {
   font-family: "Anuphan", sans-serif;
   font-size: 20px;
   text-align: start;
+  margin-left: 50px;
 }
 
 .topnav {
@@ -220,6 +220,7 @@ body {
   background-color: #D4F6FF;
   gap: 10px;
   padding: 10px;
+  margin-left: 50px;
 }
 
 .job-result-title {
@@ -329,7 +330,7 @@ body {
   color: #5297ff;
 }
 
-
+/* 
 .footer {
   
   background-color: #FFDDAE;
@@ -342,7 +343,7 @@ body {
   font-size: 16px;
   color: #575353;
 }
-
+ */
 
 
 /* job-details */
@@ -458,4 +459,39 @@ body {
 
 .slider-btn-right {
   right: 8px;
+}
+
+.sort-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.sort-btn button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Anuphan", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5297ff;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+              background-color 0.15s ease, color 0.15s ease;
+}
+
+.sort-btn button:hover {
+  background-color: #5297ff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(82, 151, 255, 0.4);
+}
+
+.times {
+  font-weight: lighter;
 }

@@ -1,1 +1,0 @@
-const jobTitle = "AI Assist"
