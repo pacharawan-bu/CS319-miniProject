@@ -4,27 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Larb Tech - Job Detail</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <header class="navbar">
-      <div class="logo_group">
-        <span class="logo">Larb tech</span>
-        <span class="sub_logo">หางานด่วน<br /></span>
+    <div class="header">
+      <h1 class="page-title">Larb Tech</h1>
+      <h3 class="page-subtitle">หางานด่วนทั่ว E3</h3>
+      <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a class="job" href="job.html">Jobs</a>
+        <a class="cert" href="cert.html">Certification</a>
       </div>
-      <nav class="nav_links">
-        <a href="index.html">Home</a>
-        <a href="job.html">Job</a>
-        <a href="cert.html">Certification</a>
-      </nav>
-    </header>
+    </div>
 
     <!-- Main Container -->
     <main class="container">
       <!-- Header ส่วนข้อมูลบริษัท -->
       <section class="company_header">
-        <div class="company_logo"></div>
+        <div class="company_logo">
+          <img src="./image/company/cloudforge_logo.jpg" alt="CloudForge Labs logo" />
+        </div>
         <div class="company_info">
           <h2>ชื่อบริษัท CloudForge Labs</h2>
           <p class="company_type">
@@ -52,7 +52,7 @@
       <div class="content_grid">
         <section>
           <div class="job_title_row">
-            <h1>AI-Assisted DevOps Engineer</h1>
+            <h1 id="job-title">AI-Assisted DBA & Data Analyst</h1>
             <a href="#_form" class="btn btn_apply">สมัครงาน</a>
           </div>
 
@@ -63,7 +63,7 @@
               (ขึ้นอยู่กับทักษะและประสบการณ์)
             </li>
             <li><strong>สาขาอาชีพหลัก :</strong> วิศวกรรมคอมพิวเตอร์/IT</li>
-            <li><strong>สาขาอาชีพรอง :</strong> DevOps / Cloud</li>
+            <li><strong>สาขาอาชีพรอง :</strong> DBA / Data Analyst</li>
             <li><strong>รูปแบบงาน :</strong> งานประจำ</li>
             <li><strong>จำนวนที่รับ :</strong> 1 ตำแหน่ง</li>
             <li><strong>วันทำงาน :</strong> จันทร์-ศุกร์</li>
@@ -75,71 +75,68 @@
           <div class="job_detail_body">
             <h3>รายละเอียดงาน</h3>
             <p>
-              <b>CloudForge Labs</b> กำลังมองหา <b>DevOps Engineer</b>
-              ที่มีความเชี่ยวชาญด้านโครงสร้างพื้นฐานระบบ (CI/CD, Cloud,
-              Infrastructure as Code) และกระตือรือร้นในการนำ AI Coding &
-              Automation Tools (เช่น GitHub Copilot, Cursor, ChatGPT, Claude)
-              มาช่วยเร่งความเร็ว เพิ่มความแม่นยำ
-              และลดเวลาการบริหารจัดการระบบโครงสร้างพื้นฐาน
+              <b>CloudForge Labs</b> กำลังเปิดรับสมัคร
+              <b>DBA & Data Analyst</b>
+              ที่มีความเชี่ยวชาญการบริหารจัดการฐานข้อมูลและการวิเคราะห์ข้อมูล
+              พร้อมเปิดรับการใช้ AI Tools (เช่น ChatGPT, Claude, SQL AI
+              Assistants) เข้ามาช่วยเร่งความเร็วในการเขียน Query, ปรับแต่ง
+              Performance (Query Optimization) และสรุปผลข้อมูลเชิงลึก
             </p>
 
             <h3>ความรับผิดชอบหลัก</h3>
             <ul>
               <li>
-                ออกแบบ เขียน และดูแล Pipeline CI/CD, Script อัตโนมัติ (Bash,
-                Python) และ Infrastructure as Code (Terraform, Ansible)
-                ให้มีประสิทธิภาพสูง
+                ออกแบบ บริหารจัดการ และดูแลความมั่นคงปลอดภัยของระบบฐานข้อมูล
+                (Relational & NoSQL เช่น PostgreSQL, MySQL, MongoDB)
               </li>
               <li>
-                ประยุกต์ใช้ AI ในการช่วยเขียน Script การ deployment,
-                ตรวจหาข้อผิดพลาด (Debugging) ของ Pipeline และปรับปรุง Script
-                ให้กระชับรวดเร็ว
+                ประยุกต์ใช้ AI ในการช่วยวิเคราะห์ข้อมูล เขียน Complex SQL Query,
+                Stored Procedures และทำการ Refactor คำสั่งให้ประมวลผลได้เร็วขึ้น
               </li>
               <li>
-                ดูแลและบริหารจัดการ Cloud Infrastructure (AWS, Azure หรือ GCP),
-                Containerization (Docker, Kubernetes)
-                ให้รองรับการทำงานของระบบได้อย่างมั่นคง
+                ติดตาม Performance Tuning, ทำ Indexing และแก้ไขปัญหา Bottleneck
+                ของระบบฐานข้อมูล
               </li>
               <li>
-                ทำงานร่วมกับทีม Developer และ Tester
-                เพื่อสร้างสภาพแวดล้อมการทำงาน (Environment) ที่เสถียร
-                รองรับการทดสอบและการใช้งานจริงได้อย่างต่อเนื่อง
+                จัดทำ Dashboard, Data Visualization และวิเคราะห์แนวโน้มข้อมูล
+                (Data Insights) เพื่อสนับสนุนการตัดสินใจของทีมและผู้บริหาร
               </li>
               <li>
-                เฝ้าระวัง ติดตามประสิทธิภาพของระบบ (Monitoring & Logging) และนำ
-                AI มาช่วยวิเคราะห์ Log เพื่อคาดการณ์ปัญหาก่อนเกิดขึ้นจริง
+                ทำงานร่วมกับทีม Backend และ Data Engineer ในการวางโครงสร้าง Data
+                Architecture และ ETL Pipelines
               </li>
               <li>
-                ดูแลด้าน Security & Compliance ในกระบวนการ DevOps (DevSecOps)
-                เพื่อให้ระบบปลอดภัยและเป็นไปตามมาตรฐาน
+                วางแผนและดำเนินการสำรองข้อมูล (Backup), การกู้คืนข้อมูล
+                (Disaster Recovery)
+                และดูแลสิทธิ์การเข้าถึงข้อมูลตามมาตรฐานความปลอดภัย
               </li>
             </ul>
 
             <h3>คุณสมบัติ</h3>
             <ul>
               <li>
-                ปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์, วิทยาการคอมพิวเตอร์, IT
-                หรือสาขาที่เกี่ยวข้อง (หรือมีประสบการณ์ที่เทียบเท่าพร้อมผลงาน)
+                ปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์, วิทยาการคอมพิวเตอร์,
+                เทคโนโลยีสารสนเทศ, สถิติ หรือสาขาที่เกี่ยวข้อง
               </li>
               <li>
-                เชี่ยวชาญ CI/CD (GitHub Actions, GitLab CI, Jenkins) และ
-                Containerization (Docker, Kubernetes)
+                เชี่ยวชาญการใช้ภาษา SQL และการบริหารจัดการ RDBMS / NoSQL
+                Database
               </li>
               <li>
-                มีความเข้าใจอย่างดีในเรื่อง Infrastructure as Code (Terraform)
-                และระบบ Cloud
+                มีทักษะการทำ Data Visualization (เช่น PowerBI, Tableau)
+                หรือการใช้ Python/R ในการวิเคราะห์ข้อมูล
               </li>
               <li>
-                มีทักษะและความคุ้นเคยในการใช้ AI-Powered Tools ช่วยงาน Scripting
-                และแก้ปัญหา Infrastructure
+                มีความเชี่ยวชาญหรือสนใจในการนำ AI Tools มาช่วยงาน Database
+                Administration และการวิเคราะห์ Data
               </li>
               <li>
-                มีความรู้เรื่อง Git Version Control และกระบวนการทำงานแบบ
-                Agile/DevOps
+                มีความเข้าใจเรื่อง Security, Data Governance
+                และข้อกำหนดความปลอดภัยของข้อมูล
               </li>
               <li>
-                มีทักษะการแก้ปัญหาเฉพาะหน้า การคิดเชิงวิเคราะห์
-                และทำงานร่วมกับผู้อื่นได้ดี
+                มีทักษะการสื่อสารดี
+                สามารถถ่ายทอดข้อมูลทางเทคนิคให้เป็นเรื่องที่เข้าใจง่ายได้
               </li>
             </ul>
 
@@ -164,27 +161,38 @@
           <div>
             <aside class="sidebar">
               <h3>ตำแหน่งอื่นๆ ในบริษัทนี้</h3>
-              <div class="job_card">
-                <div class="job_card_logo"></div>
-                <div class="job_card_title">
-                  <a href="#">AI-Assisted DBA & Data Analyst</a>
-                  <p class="job_card_description">
-                    มีความเชี่ยวชาญการบริหารจัดการฐานข้อมูลและการวิเคราะห์ข้อมูล
-                  </p>
+              <a href="devOps_page.html" class="job_card_link">
+                <div class="job_card">
+                  <div class="job_card_logo">
+                    <img src="./image/company/cloudforge_logo.jpg" alt="CloudForge Labs logo" />
+                  </div>
+                  <div class="job_card_title">
+                    <h4 class="job_card_name">AI-Assisted DevOps Engineer</h4>
+                    <p class="job_card_description">
+                      มีความเชี่ยวชาญด้านโครงสร้างพื้นฐานระบบ (CI/CD, Cloud,
+                      Infrastructure as Code)
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </aside>
 
             <aside class="sidebar">
-              <div class="job_card">
-                <div class="job_card_logo"></div>
-                <div class="job_card_title">
-                  <a href="#">AI-Assisted Software Tester (QA Engineer)</a>
-                  <p class="job_card_description">
-                    มีทักษะการทดสอบระบบทั้ง Manual และ Automation
-                  </p>
+              <a href="Tester_page.html" class="job_card_link">
+                <div class="job_card">
+                  <div class="job_card_logo">
+                    <img src="./image/company/cloudforge_logo.jpg" alt="CloudForge Labs logo" />
+                  </div>
+                  <div class="job_card_title">
+                    <h4 class="job_card_name">
+                      AI-Assisted Software Tester (QA Engineer)
+                    </h4>
+                    <p class="job_card_description">
+                      มีทักษะการทดสอบระบบทั้ง Manual และ Automation
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </aside>
           </div>
         </section>
@@ -357,6 +365,6 @@
         </form>
       </section>
     </main>
-    <script src="./js/form_validation.js"></script>
+    <script src="form_validation.js"></script>
   </body>
 </html>
