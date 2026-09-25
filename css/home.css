@@ -92,8 +92,7 @@ body {
   padding: 10px 14px;
   text-decoration: none;
   font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Anuphan", sans-serif;
   border-radius: 10px;
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
