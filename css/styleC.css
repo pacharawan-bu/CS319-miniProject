@@ -98,7 +98,7 @@ body {
 /* Add a color to the active/current link */
 .topnav a.cert {
   background-color: #ffffff;
-  color: rgb(139, 222, 255);
+  color: #5297ff;
   font-weight: bold;
   font-family: "Anuphan", sans-serif;
 }
@@ -206,12 +206,14 @@ body {
   background-color: #d8f6ff;
   font-family: "Anuphan", sans-serif;
   font-size: 16px;
-  font-weight: normal;
   margin: auto;
   margin-bottom: 40px;
   text-align: center;
   padding-left: 300px;
-  padding-right: 300px;}
+  padding-right: 300px;
+  color: #5297ff;
+
+}
 
 .cert-content {
   display: flex;
@@ -226,4 +228,51 @@ body {
   color: #333333;
   line-height: 1.5;
   text-align: left;
+}
+
+
+footer {
+  font-family: "Anuphan", sans-serif;
+}
+
+.site-footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 45px 40px;
+  margin-top: 30px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.footer-info-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.footer-col-text {
+  font-size: 11px;
+  color: #d1d5db;
+  line-height: 1.7;
+  word-break: break-word;
 }

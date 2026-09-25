@@ -122,7 +122,7 @@ body {
 /* Add a color to the active/current link */
 .topnav a.job {
   background-color: #ffffff;
-  color: rgb(139, 222, 255);
+  color: #5297ff;
   font-weight: bold;
   font-family: "Anuphan", sans-serif;
 }

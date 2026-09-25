@@ -92,7 +92,8 @@ body {
   padding: 10px 14px;
   text-decoration: none;
   font-size: 17px;
-  font-family: "Anuphan", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   border-radius: 10px;
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
@@ -1053,4 +1054,3 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
