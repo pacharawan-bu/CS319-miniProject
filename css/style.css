@@ -1,4 +1,4 @@
-
+/* style.css */
 
 .page-title {
   background-color: #ffffff;
@@ -42,6 +42,7 @@ body {
   background-color: #C6E7FF;
   padding: 10px;
   text-align: center;
+  margin-top:  80px;
 }
 
 .jobsearch-title {
@@ -105,7 +106,7 @@ body {
   padding: 10px 14px;
   text-decoration: none;
   font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Anuphan", sans-serif;
   font-weight: bold;
   border-radius: 10px;
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
@@ -123,7 +124,7 @@ body {
   background-color: #ffffff;
   color: rgb(139, 222, 255);
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Anuphan", sans-serif;
 }
 
 .btn-container {
@@ -380,7 +381,7 @@ body {
   background-color: #eef8ff;
 }
 .goback-btn-container {
-  margin: 20px 80px 0 80px;
+  margin: 105px 80px 0px 80px;
 }
 
 .job-regis {
@@ -494,4 +495,50 @@ body {
 
 .times {
   font-weight: lighter;
+}
+
+footer {
+  font-family: "Anuphan", sans-serif;
+}
+
+.site-footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 45px 40px;
+  margin-top: 30px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.footer-info-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.footer-col-text {
+  font-size: 11px;
+  color: #d1d5db;
+  line-height: 1.7;
+  word-break: break-word;
 }
